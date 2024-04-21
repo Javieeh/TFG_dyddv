@@ -44,7 +44,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Scale: 0.05
-    - _Smoothness: 0.25
+    - _Smoothness: 0.35
     - _Speed: 0.6
     m_Colors:
     - _Albedo: {r: 0.6901961, g: 0.63296986, b: 0.24313724, a: 1}
