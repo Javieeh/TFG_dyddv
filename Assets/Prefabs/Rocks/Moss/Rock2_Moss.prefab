@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5920295014684491728}
   - component: {fileID: 850433589334328544}
   - component: {fileID: 7422241375293496443}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rock2Moss_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1908368403703399747}
   - component: {fileID: 3223946525933486271}
   - component: {fileID: 8662605256835513293}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rock2Moss_LOD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8555744170945699459}
   - component: {fileID: 2217472924440156132}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rock2_Moss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 4222730461253795131}
   - component: {fileID: 2883992688201980238}
   - component: {fileID: 6737693080910244303}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rock2Moss_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
