@@ -20,7 +20,7 @@ public class FirstPersonController : MonoBehaviour
 
     #region Camera Movement Variables
 
-    public Camera playerCamera;
+    public Camera playerCamera, rippleCamera;
 
     public float fov = 60f;
     public bool invertCamera = false;
@@ -130,6 +130,10 @@ public class FirstPersonController : MonoBehaviour
     private float timer = 0;
 
     #endregion
+
+    private RaycastHit isGround;
+    public ParticleSystem ripple;
+    private bool inWater;
 
     private void Awake()
     {
@@ -362,12 +366,59 @@ public class FirstPersonController : MonoBehaviour
         {
             HeadBob();
         }
+
+        rippleCamera.transform.position = transform.position;
+        rippleCamera.transform.position = new Vector3(
+            rippleCamera.transform.position.x,
+            rippleCamera.transform.position.y + 20,
+            rippleCamera.transform.position.z
+        );
+
+        //rippleCamera.transform.position += 20;
+        Shader.SetGlobalVector("_Player", transform.position);
+        
     }
 
+    void createRipple(int start, int End, int Delta, float speed, float size, float lifetime)
+    {
+        Vector3 forward = ripple.transform.eulerAngles;
+        forward.y = start;
+        ripple.transform.eulerAngles = forward;
+
+        for (int i = start; i < End; i+=Delta)
+        {
+            ripple.Emit(transform.position + ripple.transform.forward *0.5f, ripple.transform.forward*speed, size, lifetime, Color.white);
+            ripple.transform.eulerAngles += Vector3.up * Delta;
+
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == 4)
+        {
+            createRipple(-180, 180, 3, 2, .5f, 1);
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.layer == 4)
+        {
+            createRipple(-180, 180, 3, 2, .5f, 1);
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.layer == 4 && isWalking && Time.renderedFrameCount % 5 == 0)
+        {
+            int y = (int) transform.eulerAngles.y;
+            createRipple(y-90,y+90, 3, 5, .5f, 1);
+        }
+    }
     void FixedUpdate()
     {
         #region Movement
-
+        Debug.Log("inWater: " + inWater);
         if (playerCanMove)
         {
             // Calculate how fast we should be moving
@@ -435,7 +486,9 @@ public class FirstPersonController : MonoBehaviour
                 velocityChange.y = 0;
 
                 rb.AddForce(velocityChange, ForceMode.VelocityChange);
+
             }
+            
         }
 
         #endregion
@@ -452,6 +505,7 @@ public class FirstPersonController : MonoBehaviour
         {
             Debug.DrawRay(origin, direction * distance, Color.red);
             isGrounded = true;
+
         }
         else
         {
@@ -466,6 +520,7 @@ public class FirstPersonController : MonoBehaviour
         {
             rb.AddForce(0f, jumpPower, 0f, ForceMode.Impulse);
             isGrounded = false;
+            
         }
 
         // When crouched and using toggle system, will uncrouch for a jump
@@ -553,6 +608,16 @@ public class FirstPersonController : MonoBehaviour
         GUILayout.Label("By Jess Case", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Normal, fontSize = 12 });
         GUILayout.Label("version 1.0.1", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Normal, fontSize = 12 });
         EditorGUILayout.Space();
+
+        // Particle System Setup
+        #region Particle System Setup
+        EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
+        GUILayout.Label("Particle System Setup", new GUIStyle(GUI.skin.label) { alignment = TextAnchor.MiddleCenter, fontStyle = FontStyle.Bold, fontSize = 13 }, GUILayout.ExpandWidth(true));
+        EditorGUILayout.Space();
+
+        fpc.rippleCamera = (Camera)EditorGUILayout.ObjectField(new GUIContent("Ripple Camera", "Camera attached to the controller."), fpc.rippleCamera, typeof(Camera), true);
+        fpc.ripple = (ParticleSystem)EditorGUILayout.ObjectField(new GUIContent("Particle System", "Particle system attached to the controller."), fpc.ripple, typeof(ParticleSystem), true);
+        #endregion
 
         #region Camera Setup
 
