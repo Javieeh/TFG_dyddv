@@ -20,13 +20,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: StylizedBranch01
+  m_Name: StylizedBranch0101
   m_Shader: {fileID: -6465566751694194690, guid: 25da174d60501284991031ad1ebaa667, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -54,14 +54,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _NormalInfluence: 0.05
     - _QueueControl: 0
     - _QueueOffset: 0
     - _SSC_Strength: 3
-    - _SSS_Distortion: -0.41
+    - _SSS_Distortion: -0.47
+    - _SSS_Intensity: 3
+    - _SSS_Power: 7
     - _Scale: 0.02
-    - _Smoothness: 0.175
+    - _Smoothness: 0.2
     - _Speed: 6.78
     m_Colors:
-    - _Albedo: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 0}
-    - _SSR_Color: {r: 0.529368, g: 0.8038985, b: 0.36023754, a: 1}
+    - _Albedo: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+    - _SSR_Color: {r: 0.12274211, g: 0.24528301, b: 0.010412954, a: 1}
   m_BuildTextureStacks: []

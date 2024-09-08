@@ -45,6 +45,9 @@
         },
         {
             "m_Id": "6274914b88c24461b336cf4b4fb59b6d"
+        },
+        {
+            "m_Id": "2091d47544ef4e3d9c46a4f69283addc"
         }
     ],
     "m_Nodes": [
@@ -2232,6 +2235,27 @@
     "m_ShaderOutputName": "Out",
     "m_StageCapability": 3,
     "m_BareResource": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "2091d47544ef4e3d9c46a4f69283addc",
+    "m_Name": "SSS",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "0a61d737fb9547f0a5e9278044ab59dd"
+        },
+        {
+            "m_Id": "160af64fa3da49e49c845c9490fc73a6"
+        },
+        {
+            "m_Id": "8aee203ae70e47bd9e08241cf7e2762f"
+        },
+        {
+            "m_Id": "916ebb3f2337452780fcac6c66f8885a"
+        }
+    ]
 }
 
 {
@@ -6548,10 +6572,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -181.96755981445313,
-            "y": 250.03250122070313,
-            "width": 208.0,
-            "height": 302.0
+            "x": -198.0,
+            "y": 288.0,
+            "width": 130.0,
+            "height": 118.0
         }
     },
     "m_Slots": [
@@ -8133,19 +8157,7 @@
             "m_Id": "cf93494e13204a9ea7971c61f42a0734"
         },
         {
-            "m_Id": "0a61d737fb9547f0a5e9278044ab59dd"
-        },
-        {
             "m_Id": "52b1e9e7b185402da6dbc3b9e2462ed7"
-        },
-        {
-            "m_Id": "160af64fa3da49e49c845c9490fc73a6"
-        },
-        {
-            "m_Id": "8aee203ae70e47bd9e08241cf7e2762f"
-        },
-        {
-            "m_Id": "916ebb3f2337452780fcac6c66f8885a"
         }
     ]
 }
