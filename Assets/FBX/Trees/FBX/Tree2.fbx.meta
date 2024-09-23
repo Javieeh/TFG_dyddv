@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Tree_branch
-    second: {fileID: 2100000, guid: e179fe505ec16ca4fb59cb345f9e2f04, type: 2}
+    second: {fileID: 2100000, guid: 51411532f2858fc438b05026f690bf45, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
