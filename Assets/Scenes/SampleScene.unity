@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.67935973, g: 0.73288846, b: 0.8046861, a: 1}
+  m_IndirectSpecularColor: {r: 0.6793234, g: 0.7328701, b: 0.80467707, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -547,11 +547,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2194620694126722689, guid: bde90c092b28ac14e8587e36b3bfab33, type: 3}
       propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.20438252
+      value: 0.08512063
       objectReference: {fileID: 0}
     - target: {fileID: 2194620694126722689, guid: bde90c092b28ac14e8587e36b3bfab33, type: 3}
       propertyPath: m_LODs.Array.data[1].screenRelativeHeight
-      value: 0.06527885
+      value: 0.046075135
       objectReference: {fileID: 0}
     - target: {fileID: 6132961642443460700, guid: bde90c092b28ac14e8587e36b3bfab33, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6245,7 +6245,7 @@ Terrain:
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
+  m_DetailObjectDensity: 0.5
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
   m_HeightmapMaximumLOD: 0

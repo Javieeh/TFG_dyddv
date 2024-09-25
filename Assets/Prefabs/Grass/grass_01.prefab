@@ -49,11 +49,11 @@ LODGroup:
   m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
   m_LODs:
-  - screenRelativeHeight: 0.30267137
+  - screenRelativeHeight: 0.13077205
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 5344600781486656728}
-  - screenRelativeHeight: 0.14810154
+  - screenRelativeHeight: 0.05230384
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 6448579856292661145}
@@ -277,7 +277,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5848815168047688973}
   m_Enabled: 1
-  m_CastShadows: 0
+  m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
