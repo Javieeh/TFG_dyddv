@@ -59,12 +59,12 @@ Material:
     - _QueueOffset: 0
     - _SSC_Strength: 3
     - _SSS_Distortion: -0.47
-    - _SSS_Intensity: 3
+    - _SSS_Intensity: 2
     - _SSS_Power: 7
     - _Scale: 0.02
     - _Smoothness: 0.2
     - _Speed: 6.78
     m_Colors:
-    - _Albedo: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
+    - _Albedo: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
     - _SSR_Color: {r: 0.12274211, g: 0.24528301, b: 0.010412954, a: 1}
   m_BuildTextureStacks: []

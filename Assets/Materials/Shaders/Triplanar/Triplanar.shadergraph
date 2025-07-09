@@ -128,6 +128,9 @@
         },
         {
             "m_Id": "6355d7d2524e42e3a3db33788a251fdc"
+        },
+        {
+            "m_Id": "d3f9805b91584f1ebea6b9b762fc8f00"
         }
     ],
     "m_GroupDatas": [
@@ -358,7 +361,7 @@
                 "m_Node": {
                     "m_Id": "7d46d0681933449eb5f4dfb54592475b"
                 },
-                "m_SlotId": 2
+                "m_SlotId": 3
             },
             "m_InputSlot": {
                 "m_Node": {
@@ -534,6 +537,9 @@
             },
             {
                 "m_Id": "42db3cf69793481e9ca7e1b34d492270"
+            },
+            {
+                "m_Id": "d3f9805b91584f1ebea6b9b762fc8f00"
             }
         ]
     },
@@ -1573,10 +1579,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1567.1998291015625,
-            "y": 340.7999572753906,
-            "width": 196.0,
-            "height": 33.60003662109375
+            "x": -1422.0,
+            "y": 345.0,
+            "width": 197.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -1766,7 +1772,7 @@
         "m_SerializableColors": []
     },
     "m_TextureType": 0,
-    "m_NormalMapSpace": 0,
+    "m_NormalMapSpace": 1,
     "m_EnableGlobalMipBias": true,
     "m_MipSamplingMode": 0
 }
@@ -1834,7 +1840,7 @@
         "m_SerializableColors": []
     },
     "m_TextureType": 0,
-    "m_NormalMapSpace": 0,
+    "m_NormalMapSpace": 1,
     "m_EnableGlobalMipBias": true,
     "m_MipSamplingMode": 0
 }
@@ -1907,7 +1913,7 @@
     "m_CustomColors": {
         "m_SerializableColors": []
     },
-    "m_Space": 0,
+    "m_Space": 2,
     "m_PositionSource": 0
 }
 
@@ -2321,7 +2327,7 @@
     "m_Type": "UnityEditor.Rendering.Universal.ShaderGraph.UniversalLitSubTarget",
     "m_ObjectId": "73b480ffbdf1478a8ba86edc0fc45f1a",
     "m_WorkflowMode": 1,
-    "m_NormalDropOffSpace": 0,
+    "m_NormalDropOffSpace": 1,
     "m_ClearCoat": false,
     "m_BlendModePreserveSpecular": true
 }
@@ -2579,6 +2585,30 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.NormalMaterialSlot",
+    "m_ObjectId": "8368362495344ef0a300a3088a5cd972",
+    "m_Id": 0,
+    "m_DisplayName": "Normal (Object Space)",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "NormalOS",
+    "m_StageCapability": 2,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "m_Labels": [],
+    "m_Space": 0
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Texture2DInputMaterialSlot",
     "m_ObjectId": "8539517bcbf749e2898cd21261396502",
     "m_Id": 1,
@@ -2767,10 +2797,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1360.0001220703125,
-            "y": 392.79998779296877,
+            "x": -1370.0,
+            "y": 456.0000305175781,
             "width": 128.0,
-            "height": 93.60006713867188
+            "height": 93.99996948242188
         }
     },
     "m_Slots": [
@@ -3559,6 +3589,40 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.BlockNode",
+    "m_ObjectId": "d3f9805b91584f1ebea6b9b762fc8f00",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "SurfaceDescription.NormalOS",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": 0.0,
+            "y": 0.0,
+            "width": 0.0,
+            "height": 0.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "8368362495344ef0a300a3088a5cd972"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_DismissedVersion": 0,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_SerializedDescriptor": "SurfaceDescription.NormalOS"
 }
 
 {

@@ -26,8 +26,16 @@ public class PlanarReflection : MonoBehaviour
 
             ReflectionCamera.fieldOfView = Camera.main.fieldOfView;
 
-            ReflectionCamera.gameObject.transform.position = new Vector3(Camera.main.transform.position.x, (-Camera.main.transform.position.y + transform.position.y * 2), Camera.main.transform.position.z);
-            ReflectionCamera.gameObject.transform.rotation = Quaternion.Euler(-Camera.main.transform.eulerAngles.x, Camera.main.transform.eulerAngles.y, 0f);
+            ReflectionCamera.gameObject.transform.position = 
+
+                new Vector3(Camera.main.transform.position.x, 
+                (-Camera.main.transform.position.y + transform.position.y * 2),
+                Camera.main.transform.position.z);
+
+            ReflectionCamera.gameObject.transform.rotation = 
+
+                Quaternion.Euler(-Camera.main.transform.eulerAngles.x,
+                Camera.main.transform.eulerAngles.y, 0f);
 
             Resolution = new Vector2(Camera.main.pixelWidth, Camera.main.pixelHeight);
 

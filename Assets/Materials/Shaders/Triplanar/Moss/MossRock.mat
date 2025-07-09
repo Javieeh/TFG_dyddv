@@ -24,15 +24,15 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 36c83808277e6ad409c8cc816a7248fb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8aa7b85e7faf7e94e85c572da28ce486, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: dd8e7edf53ec8664b91d88331777883e, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SecondaryTex:
-        m_Texture: {fileID: 2800000, guid: 2b7ef5cbcafe0dd43bd7a27c64bf5a9d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6eaff3fe6a807dd4c8c3d35e7781946c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -62,13 +62,13 @@ Material:
     - _DecalMeshViewBias: 0
     - _DrawOrder: 0
     - _DstBlend: 0
-    - _Height: 0.155
-    - _MainSmoothness: 0
+    - _Height: 0
+    - _MainSmoothness: 0.108
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _SecondSmoothness: 0
-    - _SecondaryTexTreshold: 0.054
+    - _SecondaryTexTreshold: 0.482
     - _Smoothness: 0
     - _SrcBlend: 1
     - _Surface: 0
